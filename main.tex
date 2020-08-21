@@ -1,0 +1,143 @@
+\documentclass[10pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[a5paper, margin=0.75in]{geometry}
+\usepackage{titling}
+\usepackage{graphicx}
+\usepackage{parskip}
+\usepackage{afterpage}
+\usepackage{fancyhdr}
+\usepackage{float}
+\usepackage{color}
+\pagestyle{fancy}
+\renewcommand{\thesection}{}
+\usepackage{multicol}
+\usepackage[toc]{multitoc}
+\clubpenalty = 10000
+
+\usepackage{tocloft}
+\renewcommand\cftsecfont{\bfseries\footnotesize}
+\renewcommand\cftsecpagefont{\bfseries\footnotesize}
+\setlength{\cftbeforesecskip}{2pt}
+
+% Do not fill titles
+\usepackage{sectsty}
+\sectionfont{\bfseries\Large\raggedright}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%% Fill in %%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\title{De Ultieme Codex}
+\date{{17-21 Augustus, 2020}}
+\author{Het Praesidium} % Won't be used except for metadata
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% Document header and footer
+\fancyhf{}
+\chead{\small \textsc{\thetitle}}
+\cfoot{\thepage}
+\setlength{\columnsep}{1cm}
+
+\begin{document}
+\begin{titlepage}
+\centering
+\vspace*{0.5cm}
+\hrule
+\vspace{0.4cm}
+{\LARGE \textsc{\thetitle}}\\[0.4cm]
+\vspace{0.4cm}
+\hrule
+\vspace{15mm}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%% Fill in %%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\includegraphics[scale=0.07]{image.jpeg}  % Choose logo
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\vfill
+\vspace{1.5cm}
+{\Large \thedate}
+\vspace{2cm}
+\end{titlepage}
+\thispagestyle{empty}
+
+\newpage
+\vspace{1cm}
+\setcounter{secnumdepth}{-1}
+\tableofcontents
+\renewcommand{\baselinestretch}{1.0}\normalsize
+\newpage
+
+\section{Regularum}
+\footnotesize
+\input{regularum}
+
+\newpage
+\begin{multicols*}{2}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%% Fill in %%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\input{songs/overig/io_vivat}
+\input{songs/nl/wilhelmus}
+\input{songs/overig/bruderlein_trink}
+\input{songs/overig/ein_prosit}
+\input{songs/overig/bier_her}
+\input{songs/nl/jeneverlied}
+
+\input{songs/nl/ad_fundum_per_jaar}
+\input{songs/nl/bloed_zweet_en_tranen}
+\input{songs/nl/brabant}
+\input{songs/nl/bsa}
+\input{songs/nl/ciske_de_adt_lied}
+\input{songs/nl/dakterras}
+\input{songs/nl/dansplaat}
+\input{songs/nl/dis_in_lucht}
+\input{songs/nl/dromen_zijn_bedrog}
+\input{songs/nl/engelen}
+\input{songs/nl/HBO_lied}
+\input{songs/nl/het_duurt_te_lang}
+\input{songs/nl/het_is_een_nacht}
+\input{songs/nl/het_regent_zonnestralen}
+\input{songs/nl/iedereen_is_van_de_wereld}
+\input{songs/nl/jan_klaassen_de_trompetter}
+\input{songs/nl/liever_te_dik_in_de_kist}
+\input{songs/nl/meeuw}
+\input{songs/nl/sinds_een_dag_of_twee_steken_in_mijn_hoofd}
+\input{songs/nl/spongebob_squarepants}
+\input{songs/nl/steeds_langer_zat}
+\input{songs/nl/stil_in_mij}
+\input{songs/nl/stupid}
+\input{songs/nl/t_dondert_en_t_bliksemt}
+\input{songs/nl/thalia_september}
+\input{songs/nl/wanbeleid}
+\input{songs/nl/wat_zullen_we_drinken}
+\input{songs/nl/wat_zullen_we_drinken_7_dagen_klok}
+\input{songs/nl/zoutelande}
+\input{songs/en/africa}
+\input{songs/en/angels}
+\input{songs/en/bohemian_rapsody}
+\input{songs/en/breaking_free}
+\input{songs/en/country_roads}
+\input{songs/en/dont_stop_me_now}
+\input{songs/en/i_will_survive}
+\input{songs/en/let_it_be}
+\input{songs/en/pokemon}
+\input{songs/en/summer_nights}
+\input{songs/en/sweet_caroline}
+\input{songs/en/walking_down_canal_street}
+\input{songs/en/wild_rover}
+\input{songs/en/wonderwall}
+\input{songs/en/youll_never_walk_alone}
+\input{songs/overig/frankfurt_oder}
+\input{songs/en/pianoman}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\end{multicols*}
+\end{document}
