@@ -4,12 +4,22 @@ Anyone who ever organized a [cantus](https://en.wikipedia.org/wiki/Cantus), know
 Not anymore! This repository functions as an archive for most popular cantus songs, in order to make it incredibly easy to build the perfect Codex in minutes.
 
 ## How to make a codex
-
 It is very easy to build your own Codex. Simply edit `main.tex` to set a title and image for the Codex, and include the preferred songs using `\input{}` statements. 
 
 Naturally, you can make further changes, for example in the `regularum.tex` file(s). Also, you can make changes to or include your own songs. With sufficient knowledge of LaTeX, this should not be too hard.
 
 Note that [Overleaf](https://www.overleaf.com/) supports opening projects directly from GitHub, which works like a charm!
+
+### Printing
+Here are some instructions on how to properly print the PDF, as this is always a challenge.
+
+- Make sure to open the PDF file in Adobe Acrobat PDF reader, as it has a 'booklet' printer setting. 
+- Print
+- Select 'booklet' as printer setting
+- Select 'landscape orientation'
+- Print with a 'center staple and fold' option. For example, on a Konica Minolta C754e PS MFP (or similar models, those are very common for many Dutch universities), the full driver should have this as finishing option if the correct options are installed to the device and set in the driver settings (for example, LU-301, FS-535 + JS-602 + SD-512, PK-521 (2/4-Hole)).
+- Select grey scale if you pay per page and want to save money. 
+- Please, please, always try a single copy first to verify settings.
 
 ## Contributing
 Just as a proper Cantus relies on the community, this repository also heavily relies on the community's contributions! We strongly invite you to add all popular (or unpopular) cantus songs to this repository in a proper way. Please create a PR when you want to add a song and it will gladly be merged, so for the future, other people can use it too. 
