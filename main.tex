@@ -8,11 +8,13 @@
 \usepackage{fancyhdr}
 \usepackage{float}
 \usepackage{color}
+\usepackage{ulem}
 \pagestyle{fancy}
 \renewcommand{\thesection}{}
 \usepackage{multicol}
 \usepackage[toc]{multitoc}
 \clubpenalty = 10000
+\usepackage[dutch]{babel}
 
 \usepackage{tocloft}
 \renewcommand\cftsecfont{\bfseries\footnotesize}
@@ -23,12 +25,14 @@
 \usepackage{sectsty}
 \sectionfont{\bfseries\Large\raggedright}
 
+\renewcommand{\thepage}{\ifnum\value{page}<100 0\fi\ifnum\value{page}<10 0\fi\arabic{page}} % Add padding zero's to page number
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%% Fill in %%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\title{De Codex}
-\date{{8 Juli, 2020}}
-\author{Het Praesidium - Thijs de Jong} % Won't be used except for metadata
+\title{Condimentum Faucibus Consectetur Elit}
+\date{{19 maart, 2022}}
+\author{Het Praesidium - Rico te Wechel, Job Doesburg, Lars van Rhijn} % Won't be used except for metadata
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -53,7 +57,7 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%% Fill in %%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\includegraphics[scale=0.5]{image.jpg}  % Choose logo
+\includegraphics[scale=0.5]{front.png}  % Choose logo
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -76,8 +80,7 @@
 \footnotesize
 \input{regularum}
 \vspace{1cm}
-\centering
-\includegraphics[scale=0.6]{songs/en/rebus-4.png}  % Choose logo
+% \centering %%% Center the songtexts
 
 \newpage
 \begin{multicols*}{2}
@@ -90,35 +93,59 @@
 \input{songs/overig/bruderlein_trink}
 \input{songs/overig/ein_prosit}
 \input{songs/overig/bier_her}
+\input{songs/overig/wir_versaufen_user_oma}
 \input{songs/nl/jeneverlied}
 
+\input{songs/overig/99_luftballons}
 \input{songs/nl/ad_fundum_per_jaar}
+\input{songs/en/africa}
+\input{songs/en/all_i_want_for_christmas_is_you}
+\input{songs/en/all_of_me}
+\input{songs/nl/alle_kleuren}
+\input{songs/en/angels}
 \input{songs/nl/bloed_zweet_en_tranen}
-\input{songs/nl/ciske_de_adt_lied}
-\input{songs/nl/dis_in_lucht}
+\input{songs/nl/brabant_ik_loop_hier_alleen}
+\input{songs/en/breaking_free}
+\input{songs/en/philosophers_song_monty_python}
+\input{songs/en/castle_on_the_hill}
+\input{songs/en/country_roads}
+\input{songs/nl/dakterras}
+\input{songs/en/dont_stop_me_now}
 \input{songs/nl/dromen_zijn_bedrog}
 \input{songs/nl/engelen}
+\input{songs/nl/er_staat_een_paard_in_de_gang}
+\input{songs/en/everytime_we_touch}
+\input{songs/nl/hallo_wereld}
+\input{songs/en/hangover}
 \input{songs/nl/HBO_lied}
-\input{songs/nl/het_duurt_te_lang}
+\input{songs/en/heaven}
 \input{songs/nl/het_is_een_nacht}
 \input{songs/nl/het_regent_zonnestralen}
-\input{songs/nl/jan_klaassen_de_trompetter}
-\input{songs/nl/sinds_een_dag_of_twee_steken_in_mijn_hoofd}
-\input{songs/nl/steeds_langer_zat}
-\input{songs/nl/stil_in_mij}
-\input{songs/nl/stupid}
-\input{songs/nl/thalia_september}
-\input{songs/nl/wat_zullen_we_drinken_7_dagen_klok}
-\input{songs/nl/zoutelande}
-\input{songs/en/angels}
-\input{songs/en/breaking_free}
-\input{songs/en/dont_stop_me_now}
 \input{songs/en/i_want_it_that_way}
 \input{songs/en/i_will_survive}
+\input{songs/nl/ik_ben_een_kerstbal}
+\input{songs/nl/jan_klaassen_de_trompetter}
+\input{songs/nl/kabouterdans}
+\input{songs/overig/levels}
+\input{songs/overig/macarena}
+\input{songs/nl/pak_maar_mn_hand}
+\input{songs/en/pianoman}
+\input{songs/en/pokemon}
+\input{songs/nl/rood}
+\input{songs/en/space_inbetween}
+\input{songs/nl/spongebob_squarepants}
+\input{songs/nl/stil_in_mij}
+\input{songs/nl/stupid}
 \input{songs/en/summer_nights}
+\input{songs/en/sweet_caroline}
+\input{songs/nl/t_dondert_en_t_bliksemt}
+\input{songs/nl/thalia_september}
+\input{songs/nl/viva_hollandia}
 \input{songs/en/walking_down_canal_street}
 \input{songs/en/wonderwall}
-\input{songs/en/pianoman}
+\input{songs/en/ymca}
+\input{songs/nl/zoutelande}
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
