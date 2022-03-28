@@ -21,6 +21,8 @@ Here are some instructions on how to properly print the PDF as a A5 paper bookle
 - Select grey scale if you pay per page and want to save money. 
 - Please, please, always try a single copy first to verify settings.
 
+It is also possible to print booklets without opening the file in Adobe Acrobat, from some Linux systems. In that case, select 'fit to page size', 'booklet' and paper size 'A5'. If you want A5 booklets, the driver will automatically choose A4 paper size for A5 booklets (and choosing A4 paper size will result in A3 paper being used).
+
 Note that for proper printing, the number of pages in your final document should be a multiple of 4 (note that the cover page has page number 0). 
 
 ## Contributing
