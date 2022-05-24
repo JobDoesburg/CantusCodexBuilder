@@ -1,6 +1,7 @@
 \documentclass[10pt]{article}
 \usepackage[utf8]{inputenc}
 \usepackage[a5paper, margin=0.75in]{geometry}
+\usepackage{codex}
 \usepackage{titling}
 \usepackage{graphicx}
 \usepackage{parskip}
@@ -10,28 +11,29 @@
 \usepackage{color}
 \usepackage{ulem}
 \pagestyle{fancy}
-\renewcommand{\thesection}{}
+\usepackage{sectsty}
+\usepackage{titlesec}
+
+\renewcommand{\thesection}{} % Don't number the songs
+\sectionfont{\bfseries\Large\raggedright} % Do not fill titles
+
 \usepackage{multicol}
 \usepackage[toc]{multitoc}
 \clubpenalty = 10000
-\usepackage[dutch]{babel}
-
+\usepackage{setspace}
 \usepackage{tocloft}
 \renewcommand\cftsecfont{\bfseries\footnotesize}
 \renewcommand\cftsecpagefont{\bfseries\footnotesize}
 \setlength{\cftbeforesecskip}{2pt}
 
-% Do not fill titles
-\usepackage{sectsty}
-\sectionfont{\bfseries\Large\raggedright}
 
 \renewcommand{\thepage}{\ifnum\value{page}<100 0\fi\ifnum\value{page}<10 0\fi\arabic{page}} % Add padding zero's to page number
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%% Fill in %%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\title{Codex}
-\date{{datum}}
+\title{Codex Thaliaweekend}
+\date{{20-5-2022}}
 \author{Het Praesidium} % Won't be used except for metadata
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -44,6 +46,7 @@
 \setlength{\columnsep}{1cm}
 
 \begin{document}
+\titlespacing*{\section}{0pt}{3pt}{0pt}
 \begin{titlepage}
 \centering
 \vspace*{0.5cm}
@@ -57,7 +60,8 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%% Fill in %%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\includegraphics[scale=0.5]{image.jpg}  % Choose logo
+\includegraphics[width=0.8\linewidth]{avatar.jpg}  % Choose logo
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -72,17 +76,41 @@
 \newpage
 \vspace{1cm}
 \setcounter{secnumdepth}{-1}
+\setstretch{.85}
 \tableofcontents
+
+{\footnotesize Source: https://github.com/JobDoesburg/CantusCodexBuilder}
 \renewcommand{\baselinestretch}{1.0}\normalsize
 \newpage
 
 \section{Regularum}
 \footnotesize
-\input{regularum}
+\input{regularum-simpel-engels}
 \vspace{1cm}
-% \centering %%% Center the songtexts
-
 \newpage
+% \centering %%% Center the songtexts
+\section{Avatar opening sequence}
+\textit{Water. Earth. Fire. Air.}
+
+\textit{My grandmother used to tell me stories about the old days, a time of peace when the Avatar kept balance between the Water Tribes, Earth Kingdom, Fire Nation, and Air Nomads.}
+
+\textit{But that all changed when the Fire Nation attacked.}
+
+\textit{Only the Avatar mastered all four elements. Only he could stop the ruthless firebenders.}
+
+\textit{But when the world needed him most, he vanished.}
+
+\textit{A hundred years have passed and the Fire Nation is nearing victory in the War.}
+
+\textit{Two years ago, my father and the men of my tribe journeyed to the Earth Kingdom to help fight against the Fire Nation, leaving me and my brother to look after our tribe.}
+
+\textit{Some people believe that the Avatar was never reborn into the Air Nomads, and that the cycle is broken.}
+
+\textit{But I haven't lost hope.}
+
+\textit{I still believe that somehow, the Avatar will return to save the world.}
+\newpage
+
 \begin{multicols*}{2}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -90,65 +118,79 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \input{songs/overig/io_vivat}
 \input{songs/nl/wilhelmus}
-\input{songs/overig/bruderlein_trink}
 \input{songs/overig/ein_prosit}
+\input{songs/overig/bruderlein_trink}
 \input{songs/overig/bier_her}
 \input{songs/overig/wir_versaufen_user_oma}
 \input{songs/nl/jeneverlied}
 
+
+\newpage
 \input{songs/overig/99_luftballons}
 \input{songs/nl/ad_fundum_per_jaar}
+\input{songs/en/ad_fundum_per_year}
 \input{songs/en/africa}
-\input{songs/en/all_i_want_for_christmas_is_you}
-\input{songs/en/all_of_me}
-\input{songs/nl/alle_kleuren}
+\input{songs/en/all_star}
 \input{songs/en/angels}
-\input{songs/nl/bloed_zweet_en_tranen}
-\input{songs/nl/brabant_ik_loop_hier_alleen}
+\input{songs/nl/belgie}
+\input{songs/en/best_day_of_my_life}
 \input{songs/en/breaking_free}
-\input{songs/en/philosophers_song_monty_python}
-\input{songs/en/castle_on_the_hill}
+\input{songs/en/bohemian_rapsody}
+\input{songs/nl/bsa}
+\input{songs/nl/ciske_de_adt_lied}
 \input{songs/en/country_roads}
-\input{songs/nl/dakterras}
 \input{songs/en/dont_stop_me_now}
-\input{songs/nl/dromen_zijn_bedrog}
+\input{songs/en/dont_stop_believing}
+\input{songs/nl/dis_in_lucht}
 \input{songs/nl/engelen}
-\input{songs/nl/er_staat_een_paard_in_de_gang}
 \input{songs/en/everytime_we_touch}
-\input{songs/nl/hallo_wereld}
-\input{songs/en/hangover}
-\input{songs/nl/HBO_lied}
+\input{songs/en/eye_of_the_tiger}
+\input{songs/overig/frankfurt_oder}
+\input{songs/en/gimme_gimme_gimme}
+\input{songs/en/high_hopes}
 \input{songs/en/heaven}
-\input{songs/nl/het_is_een_nacht}
 \input{songs/nl/het_regent_zonnestralen}
+\input{songs/nl/het_duurt_te_lang}
+\input{songs/nl/het_is_een_nacht}
+\input{songs/en/iris}
+\input{songs/nl/ik_leef_niet_meer_voor_jou}
 \input{songs/en/i_want_it_that_way}
 \input{songs/en/i_will_survive}
-\input{songs/nl/ik_ben_een_kerstbal}
 \input{songs/nl/jan_klaassen_de_trompetter}
 \input{songs/nl/kabouterdans}
-\input{songs/overig/levels}
-\input{songs/overig/macarena}
+\input{songs/en/let_it_be}
+\input{songs/en/living_on_a_prayer}
+\input{songs/nl/limburgs_volkslied}
+\input{songs/en/never_gonna_give_you_up}
+\input{songs/nl/nijmegen}
 \input{songs/nl/pak_maar_mn_hand}
+\input{songs/en/party_in_the_usa}
 \input{songs/en/pianoman}
-\input{songs/en/pokemon}
+\input{songs/en/pompeii}
 \input{songs/nl/rood}
-\input{songs/en/space_inbetween}
-\input{songs/nl/spongebob_squarepants}
-\input{songs/nl/stil_in_mij}
 \input{songs/nl/stupid}
+\input{songs/nl/stupid_english}
 \input{songs/en/summer_nights}
+\input{songs/en/summer_paradise}
 \input{songs/en/sweet_caroline}
 \input{songs/nl/t_dondert_en_t_bliksemt}
 \input{songs/nl/thalia_september}
-\input{songs/nl/viva_hollandia}
-\input{songs/en/walking_down_canal_street}
+\input{songs/en/unwritten}
+\input{songs/en/umbrella}
+\input{songs/en/valerie}
+\input{songs/nl/wat_zullen_we_drinken_7_dagen_klok}
+\input{songs/nl/wat_zou_je_doen}
+\input{songs/nl/wanbeleid}
+\input{songs/en/we_will_rock_you}
+\input{songs/en/wild_rover}
 \input{songs/en/wonderwall}
 \input{songs/en/ymca}
-\input{songs/nl/zoutelande}
-
+\input{songs/en/youll_never_walk_alone}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
 \end{multicols*}
+\newpage
+\section*{Optional space to prepare a limerick}
+
 \end{document}
