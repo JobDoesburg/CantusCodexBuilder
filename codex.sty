@@ -33,9 +33,9 @@
 {\parskip=0pt\parindent0pt\noindent\obeylines\textbf{\translate{Chorus}}
 \ifthenelse{\isempty{#1}\OR\equal{#1}{1}}{}{~\textbf{({#1}x)}}\\}}
 
-\newenvironment{chorus}
-{\parskip=0pt\parindent0pt\noindent\obeylines\textbf{\translate{Chorus}:}}
-{\leavevmode}
+\newenvironment{chorus}[1][1]{
+{\parskip=0pt\parindent0pt\noindent\obeylines\textbf{\translate{Chorus}}\ifthenelse{\isempty{#1}\OR\equal{#1}{1}}{}{~\textbf{({#1}x)}}\textbf{:}\\}
+{\leavevmode}}
 
 \newcounter{versecount}[section]
 \renewenvironment{verse}
